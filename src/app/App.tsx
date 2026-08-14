@@ -400,7 +400,7 @@ Somos una microempresa colombiana dedicada a la fabricación y comercialización
               <div className="relative">
                 <div className="aspect-[4/5] overflow-hidden bg-primary">
                   <img
-                    src="https://i.ibb.co/QFst32m5/ed9a0071-30ca-4d90-a351-932752cdfe31.png"
+                    src="https://i.ibb.co/5xsG6X9b/Chat-GPT-Image-14-ago-2026-09-12-02.png"
                     alt="Equipo de trabajo en planta de fabricación"
                     className="w-full h-full object-cover opacity-70 mix-blend-luminosity"
                   />
