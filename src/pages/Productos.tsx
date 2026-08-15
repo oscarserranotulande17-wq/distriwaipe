@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowLeft, Menu, X } from "lucide-react";
 import { Link } from "react-router";
 import { productsFull } from "../data/productsFull";
@@ -6,6 +6,10 @@ import WhatsAppButton from "../app/components/WhatsAppButton";
 
 export default function Productos() {
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
