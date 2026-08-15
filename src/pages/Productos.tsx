@@ -25,11 +25,29 @@ export default function Productos() {
               </div>
             </Link>
 
+            <nav className="hidden md:flex items-center gap-8">
+              <Link to="/" className="text-white/60 hover:text-white text-xs font-medium tracking-[0.15em] uppercase transition-colors duration-200">
+                Inicio
+              </Link>
+              <Link to="/productos" className="text-white/60 hover:text-white text-xs font-medium tracking-[0.15em] uppercase transition-colors duration-200">
+                Productos
+              </Link>
+              <Link to="/#nosotros" className="text-white/60 hover:text-white text-xs font-medium tracking-[0.15em] uppercase transition-colors duration-200">
+                Nosotros
+              </Link>
+              <Link to="/#preguntas" className="text-white/60 hover:text-white text-xs font-medium tracking-[0.15em] uppercase transition-colors duration-200">
+                Preguntas
+              </Link>
+              <Link to="/#contacto" className="text-white/60 hover:text-white text-xs font-medium tracking-[0.15em] uppercase transition-colors duration-200">
+                Contacto
+              </Link>
+            </nav>
+
             <Link
-              to="/"
-              className="flex items-center gap-2 text-white/60 hover:text-white text-xs font-medium tracking-[0.15em] uppercase transition-colors"
+              to="/#contacto"
+              className="hidden md:flex items-center gap-2 bg-accent hover:bg-accent/80 text-white text-xs font-bold px-5 py-2.5 uppercase tracking-widest transition-colors"
             >
-              <ArrowLeft size={14} /> Volver al inicio
+              Cotizar
             </Link>
           </div>
         </header>
