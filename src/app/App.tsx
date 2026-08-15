@@ -355,6 +355,15 @@ export default function App() {
                   </a>
                 </div>
               ))}
+               </div>
+
+            <div className="mt-10 text-center">
+              <Link
+                to="/productos"
+                className="inline-flex items-center gap-2 border border-primary hover:bg-primary hover:text-white text-primary font-bold px-8 py-4 uppercase tracking-widest text-xs transition-colors"
+              >
+                Ver Catálogo Completo
+              </Link>
             </div>
              </div>
         </section>
