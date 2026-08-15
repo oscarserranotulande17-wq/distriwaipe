@@ -165,15 +165,25 @@ export default function App() {
             </div>
 
             <nav className="hidden md:flex items-center gap-8">
-              {navLinks.map((link) => (
-                <a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
-                  className="text-white/60 hover:text-white text-xs font-medium tracking-[0.15em] uppercase transition-colors duration-200"
-                >
-                  {link}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link === "Productos" ? (
+                  <Link
+                    key={link}
+                    to="/productos"
+                    className="text-white/60 hover:text-white text-xs font-medium tracking-[0.15em] uppercase transition-colors duration-200"
+                  >
+                    {link}
+                  </Link>
+                ) : (
+                  
+                    key={link}
+                    href={`#${link.toLowerCase()}`}
+                    className="text-white/60 hover:text-white text-xs font-medium tracking-[0.15em] uppercase transition-colors duration-200"
+                  >
+                    {link}
+                  </a>
+                )
+              )}
             </nav>
 
             <a
@@ -194,16 +204,27 @@ export default function App() {
 
           {mobileOpen && (
             <div className="md:hidden bg-primary border-t border-white/10 px-6 py-5 flex flex-col gap-5">
-              {navLinks.map((link) => (
-                <a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
-                  onClick={() => setMobileOpen(false)}
-                  className="text-white/70 text-sm tracking-widest uppercase"
-                >
-                  {link}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link === "Productos" ? (
+                  <Link
+                    key={link}
+                    to="/productos"
+                    onClick={() => setMobileOpen(false)}
+                    className="text-white/70 text-sm tracking-widest uppercase"
+                  >
+                    {link}
+                  </Link>
+                ) : (
+                  
+                    key={link}
+                    href={`#${link.toLowerCase()}`}
+                    onClick={() => setMobileOpen(false)}
+                    className="text-white/70 text-sm tracking-widest uppercase"
+                  >
+                    {link}
+                  </a>
+                )
+              )}
               <a
                 href="#contacto"
                 onClick={() => setMobileOpen(false)}
