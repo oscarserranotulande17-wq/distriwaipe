@@ -1,6 +1,6 @@
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router";
-import { products } from "../data/products";
+import { productsFull } from "../data/productsFull";
 import WhatsAppButton from "../components/WhatsAppButton";
 
 export default function Productos() {
@@ -35,7 +35,7 @@ export default function Productos() {
           </div>
         </header>
 
-        {/* HEADER DE LA PÁGINA */}
+        {/* HEADER */}
         <section className="py-16 bg-primary">
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex items-center gap-3 mb-4">
@@ -48,48 +48,65 @@ export default function Productos() {
           </div>
         </section>
 
-        {/* GRID DE PRODUCTOS */}
+        {/* LISTA DETALLADA */}
         <section className="py-16 bg-background">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
-              {products.map((product) => (
-                <div
-                  key={product.id}
-                  className="bg-card p-8 group hover:bg-primary transition-colors duration-300 cursor-default relative overflow-hidden"
-                >
+          <div className="max-w-6xl mx-auto px-6 space-y-16">
+            {productsFull.map((product, index) => (
+              <div
+                key={product.id}
+                className={`grid md:grid-cols-2 gap-10 items-center ${
+                  index % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
+                }`}
+              >
+                <div className="aspect-[4/3] overflow-hidden bg-secondary">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div>
                   {product.badge && (
-                    <span className="absolute top-6 right-6 bg-accent text-white text-[9px] font-black px-2 py-0.5 tracking-[0.2em] uppercase">
+                    <span className="inline-block bg-accent text-white text-[9px] font-black px-2 py-0.5 tracking-[0.2em] uppercase mb-4">
                       {product.badge}
                     </span>
                   )}
+                  <span className="block text-muted-foreground text-[10px] uppercase tracking-[0.25em] mb-2">
+                    {product.category}
+                  </span>
+                  <h2 className="font-display font-black text-primary text-4xl md:text-5xl uppercase mb-4">
+                    {product.name}
+                  </h2>
+                  <p className="text-foreground/70 text-sm leading-relaxed mb-6">
+                    {product.fullDescription}
+                  </p>
 
                   <div className="mb-6">
-                    <div className="w-12 h-12 bg-primary/8 group-hover:bg-accent/20 transition-colors flex items-center justify-center mb-4">
-                      <span className="font-display font-black text-primary group-hover:text-accent text-xl transition-colors">
-                        {product.name.charAt(0)}
-                      </span>
-                    </div>
-                    <span className="text-muted-foreground group-hover:text-white/40 text-[9px] uppercase tracking-[0.25em] transition-colors">
-                      {product.category}
+                    <span className="text-[9px] uppercase tracking-widest text-muted-foreground block mb-2">
+                      Presentaciones disponibles
                     </span>
+                    <div className="flex flex-wrap gap-2">
+                      {product.presentations.map((p) => (
+                        <span
+                          key={p}
+                          className="border border-border px-3 py-1 text-xs text-foreground/70"
+                        >
+                          {p}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-
-                  <h3 className="font-display font-black text-primary group-hover:text-white text-4xl uppercase mb-3 transition-colors">
-                    {product.name}
-                  </h3>
-                  <p className="text-muted-foreground group-hover:text-white/55 text-sm leading-relaxed transition-colors">
-                    {product.description}
-                  </p>
 
                   <Link
                     to="/#contacto"
-                    className="mt-6 flex items-center gap-2 text-accent text-[10px] font-bold uppercase tracking-widest hover:gap-3 transition-all cursor-pointer"
+                    className="inline-flex items-center gap-2 bg-primary hover:bg-accent text-white font-bold px-6 py-3 uppercase tracking-widest text-xs transition-colors"
                   >
-                    Solicitar información <ArrowRight size={11} />
+                    Solicitar Cotización
                   </Link>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </section>
 
