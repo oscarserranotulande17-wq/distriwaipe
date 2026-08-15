@@ -66,7 +66,7 @@ export const productsFull = [
     badge: null,
     shortDescription: "Solvente aromático para pinturas y resinas.",
     fullDescription: "El xilol es un solvente de base aromática ampliamente utilizado en la formulación de pinturas, barnices y resinas. También funciona como agente de limpieza industrial especializado, siendo esencial en procesos de manufactura y acabados.",
-    image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&h=600&fit=crop&auto=format",
+    image: "https://i.ibb.co/bRKJTYCv/Chat-GPT-Image-15-ago-2026-09-26-36-a-m.png",
     presentations: ["Galón", "Caneca x 5 galones"],
   },
   {
@@ -76,7 +76,7 @@ export const productsFull = [
     badge: "LÍNEA",
     shortDescription: "Línea completa de productos de aseo multiuso.",
     fullDescription: "Nuestra línea de aseo general incluye desengrasantes, multiusos y más, formulados para entornos industriales, comerciales y domésticos. Una solución integral para mantener espacios limpios con productos confiables y de calidad garantizada.",
-    image: "https://images.unsplash.com/photo-1563453392212-326f5e854473?w=800&h=600&fit=crop&auto=format",
+    image: "https://i.ibb.co/M5NVRsBG/images-1.jpg",
     presentations: ["Galón", "Litro", "Presentación institucional"],
   },
 ];
