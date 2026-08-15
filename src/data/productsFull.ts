@@ -6,7 +6,7 @@ export const productsFull = [
     badge: "FABRICADO",
     shortDescription: "Paño industrial resistente para limpieza de maquinaria y talleres.",
     fullDescription: "Fabricamos nuestro propio Waipe tipo carpeta, un paño industrial de alta resistencia diseñado para las exigencias del sector industrial. Ideal para limpieza de maquinaria pesada, talleres mecánicos y superficies de alta demanda. Su textura absorbente y durabilidad lo convierten en la opción preferida de empresas que buscan calidad y rendimiento en cada jornada de trabajo.",
-    image: "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=800&h=600&fit=crop&auto=format",
+    image: "https://i.ibb.co/pjmGTM4G/Chat-GPT-Image-15-ago-2026-09-14-22-a-m.png",
     presentations: ["Bulto x 25kg"],
   },
   {
