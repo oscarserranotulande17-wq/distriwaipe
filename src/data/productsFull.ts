@@ -56,7 +56,7 @@ export const productsFull = [
     badge: "96°",
     shortDescription: "Alcohol de alta pureza para desinfección.",
     fullDescription: "Nuestro alcohol isopropílico al 96° ofrece alta pureza para desinfección de superficies, limpieza de circuitos electrónicos y aplicaciones de laboratorio. Evapora rápidamente sin dejar residuos, ideal para uso industrial y sanitario.",
-    image: "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=800&h=600&fit=crop&auto=format",
+    image: "https://i.ibb.co/Kjmqp5x3/Chat-GPT-Image-15-ago-2026-09-24-20-a-m.png",
     presentations: ["Galón", "Caneca x 5 galones"],
   },
   {
