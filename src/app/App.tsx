@@ -175,7 +175,7 @@ export default function App() {
                     {link}
                   </Link>
                 ) : (
-                  
+                  <a
                     key={link}
                     href={`#${link.toLowerCase()}`}
                     className="text-white/60 hover:text-white text-xs font-medium tracking-[0.15em] uppercase transition-colors duration-200"
