@@ -36,7 +36,7 @@ export const productsFull = [
     badge: null,
     shortDescription: "Diluyente de alta calidad para pinturas y esmaltes.",
     fullDescription: "Nuestro thinner ofrece una formulación optimizada para diluir pinturas, lacas y esmaltes, garantizando resultados profesionales en todo tipo de superficies. Ideal para talleres de pintura automotriz, ebanistería e industria en general.",
-    image: "https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=800&h=600&fit=crop&auto=format",
+    image: "https://i.ibb.co/RkFf8zHY/Chat-GPT-Image-15-ago-2026-09-19-09-a-m.png",
     presentations: ["Galón", "Caneca x 5 galones"],
   },
   {
