@@ -685,7 +685,7 @@ Somos una microempresa colombiana dedicada a la fabricación y comercialización
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-10">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 bg-accent flex items-center justify-center">
-                  <span className="font-display font-black text-white text-sm tracking-tight">W</span>
+                  <span className="font-display font-black text-white text-sm tracking-tight">D</span>
                 </div>
                 <div className="leading-none">
                   <div className="font-display font-black text-white text-xl tracking-[0.2em] uppercase">Distriwaipe</div>
@@ -708,7 +708,7 @@ Somos una microempresa colombiana dedicada a la fabricación y comercialización
 
             <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between gap-4">
               <p className="text-white/25 text-[10px]">
-                © 2024 WAIPE Industrial. Todos los derechos reservados.
+                © 2024 Distriwaipe. Todos los derechos reservados.
               </p>
               <p className="text-white/25 text-[10px]">
                 Waipe tipo carpeta · Waipe blanco · Solventes · Productos de aseo · Colombia
