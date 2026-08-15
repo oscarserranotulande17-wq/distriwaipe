@@ -590,7 +590,7 @@ Somos una microempresa colombiana dedicada a la fabricación y comercialización
                   Su Cotización
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-10 text-sm">
-                  Contáctenos para conocer precios, disponibilidad y condiciones de entrega. Atendemos pedidos al por mayor y al detal.
+                  Contáctenos para conocer precios, disponibilidad y condiciones de entrega. Atendemos pedidos al detal con la mayor rapidez.
                 </p>
 
                 <div className="space-y-6">
@@ -617,7 +617,7 @@ Somos una microempresa colombiana dedicada a la fabricación y comercialización
                     <span className="text-accent font-bold block mb-1 text-xs uppercase tracking-widest">Horario de atención</span>
                     Lunes a viernes: 8:00 am – 5:00 pm
                     <br />
-                    Sábados: 8:00 am – 12:00 m
+                    Sábados: 8:00 am – 12:00 am
                   </p>
                 </div>
               </div>
