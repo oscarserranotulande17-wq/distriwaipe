@@ -7,7 +7,7 @@ export const productsFull = [
     shortDescription: "Paño industrial resistente para limpieza de maquinaria y talleres.",
     fullDescription: "Fabricamos nuestro propio Waipe tipo carpeta, un paño industrial de alta resistencia diseñado para las exigencias del sector industrial. Ideal para limpieza de maquinaria pesada, talleres mecánicos y superficies de alta demanda. Su textura absorbente y durabilidad lo convierten en la opción preferida de empresas que buscan calidad y rendimiento en cada jornada de trabajo.",
     image: "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=800&h=600&fit=crop&auto=format",
-    presentations: ["Bulto x 25kg", "Bulto x 50kg"],
+    presentations: ["Bulto x 25kg"],
   },
   {
     id: 7,
@@ -17,7 +17,7 @@ export const productsFull = [
     shortDescription: "Waipe suave y absorbente para limpieza de precisión.",
     fullDescription: "Nuestro Waipe blanco combina suavidad y alta capacidad de absorción, perfecto para limpieza de precisión en superficies delicadas. Utilizado ampliamente en la industria textil, sector automotriz y aplicaciones donde se requiere un acabado limpio sin dejar residuos ni pelusa.",
     image: "https://images.unsplash.com/photo-1583947581924-860bda6a26df?w=800&h=600&fit=crop&auto=format",
-    presentations: ["Bulto x 25kg", "Bulto x 50kg"],
+    presentations: ["Bulto x 25kg"],
   },
   {
     id: 1,
@@ -27,7 +27,7 @@ export const productsFull = [
     shortDescription: "Paños industriales de alta resistencia, reutilizables.",
     fullDescription: "Los paños Wypall-X70 están diseñados para ambientes industriales exigentes, ofreciendo absorción superior y durabilidad comprobada. Son reutilizables, lo que los hace una inversión inteligente para talleres, plantas de manufactura y centros de mantenimiento que buscan eficiencia sin sacrificar calidad.",
     image: "https://images.unsplash.com/photo-1563453392212-326f5e854473?w=800&h=600&fit=crop&auto=format",
-    presentations: ["Caja x 100 unidades", "Rollo individual"],
+    presentations: ["Caja x 6 unidades", "Rollo individual"],
   },
   {
     id: 2,
@@ -57,7 +57,7 @@ export const productsFull = [
     shortDescription: "Alcohol de alta pureza para desinfección.",
     fullDescription: "Nuestro alcohol isopropílico al 96° ofrece alta pureza para desinfección de superficies, limpieza de circuitos electrónicos y aplicaciones de laboratorio. Evapora rápidamente sin dejar residuos, ideal para uso industrial y sanitario.",
     image: "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=800&h=600&fit=crop&auto=format",
-    presentations: ["Galón", "Litro"],
+    presentations: ["Galón", "Caneca x 5 galones"],
   },
   {
     id: 5,
