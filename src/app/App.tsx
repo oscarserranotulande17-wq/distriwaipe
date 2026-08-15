@@ -92,6 +92,25 @@ const benefits = [
   },
 ];
 
+const faqs = [
+  {
+    question: "¿Cuál es el pedido mínimo?",
+    answer: "El pedido mínimo es de tan solo 1 unidad de Waipe (o el producto que necesite). No manejamos cantidades mínimas altas, así que puede solicitar desde una unidad hasta grandes volúmenes según su necesidad.",
+  },
+  {
+    question: "¿Hacen entregas fuera de Cali?",
+    answer: "Sí, realizamos domicilio a los alrededores de Cali. Contáctenos indicando su ubicación y le confirmamos cobertura y condiciones de entrega.",
+  },
+  {
+    question: "¿Cuánto tarda la entrega?",
+    answer: "El tiempo de entrega depende de la cantidad solicitada. Pedidos pequeños (como 1 unidad) se entregan al día siguiente. Pedidos más grandes, como una tonelada, pueden tardar entre 1 y 8 días, dependiendo del volumen solicitado.",
+  },
+  {
+    question: "¿Manejan precios por mayor?",
+    answer: "Sí, ofrecemos precios especiales para compras al por mayor. Contáctenos por WhatsApp o el formulario de cotización indicando las cantidades que necesita.",
+  },
+];
+
 type FormData = {
   nombre: string;
   empresa: string;
@@ -112,6 +131,8 @@ export default function App() {
       }
     }
   }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [formData, setFormData] = useState<FormData>({
     nombre: "",
     empresa: "",
@@ -142,7 +163,7 @@ export default function App() {
     }, 3000);
   };
 
-  const navLinks = ["Inicio", "Productos", "Nosotros", "Contacto"];
+const navLinks = ["Inicio", "Productos", "Nosotros", "Preguntas", "Contacto"];
 
   return (
     <>
@@ -490,6 +511,54 @@ Somos una microempresa colombiana dedicada a la fabricación y comercialización
             </div>
           </div>
         </section>
+
+        {/* ── FAQ ── */}
+        <section id="preguntas" className="py-24 bg-background">
+          <div className="max-w-3xl mx-auto px-6">
+            <div className="text-center mb-16">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-px w-8 bg-accent" />
+                <span className="text-accent text-[10px] font-bold tracking-[0.3em] uppercase">Dudas Frecuentes</span>
+                <div className="h-px w-8 bg-accent" />
+              </div>
+              <h2 className="font-display font-black text-primary text-4xl md:text-5xl uppercase leading-none">
+                Preguntas
+                <br />
+                <span className="text-accent">Frecuentes</span>
+              </h2>
+            </div>
+
+            <div className="space-y-px bg-border">
+              {faqs.map((faq, index) => (
+                <div key={index} className="bg-card">
+                  <button
+                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                    className="w-full flex items-center justify-between gap-4 p-6 text-left"
+                  >
+                    <span className="font-display font-bold text-primary text-lg uppercase">
+                      {faq.question}
+                    </span>
+                    <ChevronDown
+                      size={18}
+                      className={`text-accent flex-shrink-0 transition-transform duration-300 ${
+                        openFaq === index ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  {openFaq === index && (
+                    <div className="px-6 pb-6">
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        
 
         {/* ── IMAGE BAND ── */}
         <div className="h-56 md:h-72 overflow-hidden relative bg-primary">
