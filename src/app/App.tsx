@@ -215,7 +215,7 @@ export default function App() {
                     {link}
                   </Link>
                 ) : (
-                  
+                  <a
                     key={link}
                     href={`#${link.toLowerCase()}`}
                     onClick={() => setMobileOpen(false)}
