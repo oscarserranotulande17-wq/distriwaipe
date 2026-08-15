@@ -16,7 +16,7 @@ export const productsFull = [
     badge: "FABRICADO",
     shortDescription: "Waipe suave y absorbente para limpieza de precisión.",
     fullDescription: "Nuestro Waipe blanco combina suavidad y alta capacidad de absorción, perfecto para limpieza de precisión en superficies delicadas. Utilizado ampliamente en la industria textil, sector automotriz y aplicaciones donde se requiere un acabado limpio sin dejar residuos ni pelusa.",
-    image: "https://images.unsplash.com/photo-1583947581924-860bda6a26df?w=800&h=600&fit=crop&auto=format",
+    image: "https://i.ibb.co/4cF5xZW/Chat-GPT-Image-15-ago-2026-09-16-56-a-m.png",
     presentations: ["Bulto x 25kg"],
   },
   {
@@ -26,7 +26,7 @@ export const productsFull = [
     badge: "PREMIUM",
     shortDescription: "Paños industriales de alta resistencia, reutilizables.",
     fullDescription: "Los paños Wypall-X70 están diseñados para ambientes industriales exigentes, ofreciendo absorción superior y durabilidad comprobada. Son reutilizables, lo que los hace una inversión inteligente para talleres, plantas de manufactura y centros de mantenimiento que buscan eficiencia sin sacrificar calidad.",
-    image: "https://images.unsplash.com/photo-1563453392212-326f5e854473?w=800&h=600&fit=crop&auto=format",
+    image: "https://i.ibb.co/tMwxpLNL/images.jpg",
     presentations: ["Caja x 6 unidades", "Rollo individual"],
   },
   {
