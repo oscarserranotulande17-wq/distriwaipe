@@ -46,7 +46,7 @@ export const productsFull = [
     badge: null,
     shortDescription: "Solvente ideal para desengrase de maquinaria.",
     fullDescription: "El varsol es un solvente derivado del petróleo, perfecto para desengrase y limpieza profunda de maquinaria, equipos y superficies metálicas. Ampliamente utilizado en talleres mecánicos y plantas industriales por su efectividad y bajo costo operativo.",
-    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&h=600&fit=crop&auto=format",
+    image: "https://i.ibb.co/DHL5gVVh/Chat-GPT-Image-15-ago-2026-09-22-28-a-m.png",
     presentations: ["Galón", "Caneca x 5 galones"],
   },
   {
