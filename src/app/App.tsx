@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Phone, Mail, MapPin, ChevronRight, ArrowRight, Shield, Truck, Award, Clock } from "lucide-react";
 import WhatsAppButton from "./components/WhatsAppButton";
 import { Link } from "react-router";
@@ -101,6 +101,17 @@ type FormData = {
 
 export default function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.replace("#", "");
+      const el = document.getElementById(id);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, []);
   const [formData, setFormData] = useState<FormData>({
     nombre: "",
     empresa: "",
