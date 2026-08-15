@@ -1,9 +1,12 @@
-import { ArrowLeft } from "lucide-react";
+import { useState } from "react";
+import { ArrowLeft, Menu, X } from "lucide-react";
 import { Link } from "react-router";
 import { productsFull } from "../data/productsFull";
 import WhatsAppButton from "../app/components/WhatsAppButton";
 
 export default function Productos() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   return (
     <>
       <WhatsAppButton />
@@ -13,7 +16,7 @@ export default function Productos() {
       `}</style>
 
       <div className="min-h-screen bg-background text-foreground">
-        <header className="sticky top-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-white/10">
+       <header className="sticky top-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-white/10">
           <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-3">
               <div className="w-8 h-8 bg-accent flex items-center justify-center">
@@ -49,7 +52,42 @@ export default function Productos() {
             >
               Cotizar
             </Link>
+
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="md:hidden text-white p-1"
+              aria-label="Menú"
+            >
+              {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+            </button>
           </div>
+
+          {mobileOpen && (
+            <div className="md:hidden bg-primary border-t border-white/10 px-6 py-5 flex flex-col gap-5">
+              <Link to="/" onClick={() => setMobileOpen(false)} className="text-white/70 text-sm tracking-widest uppercase">
+                Inicio
+              </Link>
+              <Link to="/productos" onClick={() => setMobileOpen(false)} className="text-white/70 text-sm tracking-widest uppercase">
+                Productos
+              </Link>
+              <Link to="/#nosotros" onClick={() => setMobileOpen(false)} className="text-white/70 text-sm tracking-widest uppercase">
+                Nosotros
+              </Link>
+              <Link to="/#preguntas" onClick={() => setMobileOpen(false)} className="text-white/70 text-sm tracking-widest uppercase">
+                Preguntas
+              </Link>
+              <Link to="/#contacto" onClick={() => setMobileOpen(false)} className="text-white/70 text-sm tracking-widest uppercase">
+                Contacto
+              </Link>
+              <Link
+                to="/#contacto"
+                onClick={() => setMobileOpen(false)}
+                className="bg-accent text-white text-sm font-bold py-3 uppercase tracking-widest text-center"
+              >
+                Cotizar ahora
+              </Link>
+            </div>
+          )}
         </header>
 
         <section className="py-16 bg-primary">
